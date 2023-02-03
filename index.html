@@ -13,37 +13,124 @@
     <div class = "container">
         <div class = "column">
             <img src = "img/vis1.png" width = 50% height = 50%>
+        </br></br></br></br></br>
             <img src = "img/vis2.png" width = 50% height = 50%>
         </div>
 
         <div class = "column">
             <div class = "text">
+                <h2> Marks </h2>
                 <ul>
-                    <li> marks and channels stuff </li>
-                    <li> color map stuff </li>
+                    <li> Area </li>
                 </ul>
-
+                <h2> Channels </h2>
                 <ul>
-                    <li> marks and channels stuff </li>
-                    <li> color map stuff </li>
+                    <li> Channel: Color</li>
+                    <ul>
+                        <li> Attribute: Categorical (Which Party the Electoral Votes
+                        would have gone to) </li>
+                        <li> This is a great choice and use of the channel. Since this
+                        visualization is helping us see theoretical electoral vote
+                        distribution across the country, it makes the most sense for the
+                        visualization to be a map of the U.S. which each of the states
+                        represented by a color representative of the party of the
+                        winning candidate. This makes the visualization easy to understand. </li>
+                    </ul>
+                </ul>
+                <h2> Colormap </h2>
+                <ul>
+                    <li> Categorical (Blue and Red) </li>
+                    <ul>
+                        <li> Attribute: Categorical (Which Party the Electoral Votes
+                        would have gone to) </li>
+                        <li> As stated in the Channel section, this is a great color map choice.
+                        It clearly illustrates the dichotomy of choice in the major presidential
+                        election. </li>
+                    </ul>
+                </ul>
+                </br></br></br></br>
+                <h2> Marks </h2>
+                <ul>
+                    <li> Points </li>
+                </ul>
+                <h2> Channels </h2>
+                <ul>
+                    <li> Channel: Color</li>
+                    <ul>
+                        <li> Attribute: Divergent (LWTS scoring value of batted balls) </li>
+                        <li> This is a helpful choice of channel, but could be executed better.
+                        It illustrates the idea that ball quality can range from below to above average,
+                        not just average to really great. However, the color choices representing the
+                        2 extremes may not be accessible to all users. Additionally, pink and orange
+                        do not typically connote opposites, so it may be more prudent to pick more
+                        disparate colors at opposite ends of the color wheel. It may also be a better idea
+                        to pick darker colors so that the difference in tint/gradient is more pronounced.
+                        As it stands, all of the colors are quite bright, which can be difficult to discern.
+                        </li>
+                    </ul>
+                    <li> Channel: Horizontal Position </li>
+                    <ul>
+                        <li> Attribute: Sequential (exit velocity in mph) </li>
+                        <li> This seems like a reasonable channel choice. The point
+                        of this visualization is to compare the quality of a batted ball
+                        based on its exit velocity and launch angle. Plotting these
+                        two factors on the x and y axis is one way to visualize the
+                        "sweet spot" balance of these two factors to bat the optimal ball.
+                        </br> One thing that could be considered as an alternative is to instead
+                        visualize the exit velocity by literally plotting points with their velocity
+                            acting as the distance relative to the origin (0,0). This could help as a more
+                        literal path of where the ball goes may be easier for industry professionals
+                        to understand, where as this traditional x and y axis scatter plot is
+                        more accessible to everyone. </li>
+                    </ul>
+                    <li> Channel: Vertical Position </li>
+                    <ul>
+                        <li> Attribute: Divergent (launch angle) </li>
+                        <li> This seems like a reasonable channel choice. The point
+                        of this visualization is to compare the quality of a batted ball
+                        based on its exit velocity and launch angle. Plotting these
+                        two factors on the x and y axis is one way to visualize the
+                        "sweet spot" balance of these two factors to bat the optimal ball.
+                        </br> One thing that could be considered as an alternative is to instead
+                        visualize the launch angle by literally plotting points by their launch
+                        angle relative to the origin (0,0). This could help as a more
+                        literal path of where the ball goes may be easier for industry professionals
+                        to understand, where as this traditional x and y axis scatter plot is
+                        more accessible to everyone. </li>
+                    </ul>
+                </ul>
+                <h2> Colormap </h2>
+                <ul>
+                    <li> Divergent (ranging from Orange and Pink extremes) </li>
+                    <ul>
+                        <li> Attribute: Divergent (LWTS scoring value of batted balls) </li>
+                        <li> As stated in the Channel section, this is good colormap concept choice, but
+                        could have improved execution. We need a way to represent below and above average
+                        balls where we can easily differentiate above average from below average. However,
+                        the 2 extremes being orange and pink and all hues being relatively bright can
+                        make the differences hard to discern on certain displays or with certain users.
+                        To make the visualization more accessible, the two extremes should be darker hues
+                        that are opposites on the color wheel. For example, the blue and red from
+                        the above visualization would be great choices to represent two opposite extremes.</li>
+                    </ul>
                 </ul>
             </div>
         </div>
     </div>
 
-    /*
-    For hw-03, the instructions say to use an external JavaScript file. However, you'll notice none of the tasks
-    in the instructions require JavaScript. This was a typo in the instructions, because I adjusted the assignment
-    based on what we covered in class. Here's what we will do:
-•	You are not required to add/use an external .js file for hw-03 as it is written.
-•	You may earn up to 10 bonus points by adding a functioning button to your webpage. The button should modify
-    the page in some way every time it is clicked, and you can choose how it modifies the page. Be sure to make
-    sure your button works consistently, and that no error messages print to your developer console.
-    */
+    <script src="buttonextracredit.js"></script>
+    <h3>
+        <button type = "button" onClick = "inc()"> Proclaim your love for Data Science! </button>
+        <div id="content">
+            Love for Data Science: 0
+        </div>
+    </h3>
+
 
     <h1> Acknowledgements </h1>
     <ul>
-        <li></li>
+        <li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"> CSS alignment </a></li>
+        <li><a href = "https://www.w3schools.com/css/css3_buttons.asp"> Button Styling </a> </li>
     </ul>
 
 </body>
