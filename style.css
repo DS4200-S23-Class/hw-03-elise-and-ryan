@@ -1,0 +1,22 @@
+body{
+    font-family: "Arial"; /* make the whole page Arial */
+}
+
+h1{
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: baseline;
+}
+
+.column > .text{
+    text-align: left;
+}
