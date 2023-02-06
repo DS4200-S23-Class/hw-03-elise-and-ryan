@@ -12,7 +12,7 @@ h1{
     text-align: center;
 }
 
-.container{
+.container{ /* aligning content in columns so that if the window is resized it is more readable */
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -40,7 +40,7 @@ button {
   transition-duration: 0.2s;
 }
 
-button:hover {
+button:hover { /* adding fancy so user can tell when they're hovering over the button by the color change */
   background-color: gray;
   color: white;
 }
